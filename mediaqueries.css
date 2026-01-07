@@ -1,0 +1,72 @@
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 980px){
+  #desktop-nav{ display:none; }
+  #hamburger-nav{ display:flex; justify-content: space-between; align-items:center; }
+
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .hero-left{ display:flex; justify-content:center; }
+  .hero-photo{ max-width: 520px; }
+
+  .about-layout{ flex-direction: column; }
+  .about-image{ justify-content:center; }
+
+  .exp-box{
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .exp-left{
+    width: 100%;
+    flex-direction: row;
+    justify-content:center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .exp-date, .exp-location{ text-align:center; }
+
+  .edu-box{
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .edu-left{ width: 100%; justify-content:flex-start; }
+
+  .research-box{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px){
+  .title{ font-size: 2.05rem; }
+  .section__text__p2{ font-size: 1.05rem; }
+
+  /* ✅ Mobile-safe HERO TREE: convert to grid */
+  .logo-tree{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding-top: 0.6rem;
+  }
+
+  .tree-lines{ display:none; } /* hide SVG connectors on mobile */
+
+  .tree-node{
+    position: static;      /* stop absolute positioning */
+    width: 100%;
+    height: auto;
+    min-height: 78px;
+  }
+
+  /* cancel absolute offsets */
+  .node-cobionix,.node-uw,.node-abyss,.node-bahria,
+  .node-apple,.node-keysight,.node-rogers{
+    left: auto; top: auto;
+  }
+}
+
+@media (max-width: 420px){
+  .logo-tree{
+    grid-template-columns: 1fr; /* single column for very small phones */
+  }
+}

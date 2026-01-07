@@ -1,232 +1,532 @@
-i<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio_Maaz Qureshi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maaz | Portfolio</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Maaz Qureshi<br />
-						Portfolio</h1>
-						<p><strong>AI/ML Research Engineer: Software Development</strong></p>
-						<!--<p>m23qures@uwaterloo.ca, <a href="https://www.linkedin.com/in/maaz-ahmad-046c/">LinkedIn</a></p>-->
-						<p>3+ years experienced R&D Software Development in ROS2 (Robot Operating System 2), C++, Python, and Artificial Intelligence frameworks (m23qures@uwaterloo.ca, <a href="https://www.linkedin.com/in/maaz-ahmad-046c/">LinkedIn)</a>.</p>
-					Research Interest(s): </a><br />(a). Visual Intelligence, Autonomy i.e. Navigation (SLAM), and Motion Planning.</a><br /> (b). Computer Vision and Robotics Perception (Radar, LiDAR, RGB-D) sensors. </a><br /> (c). AI/ML: Imitation Learning/Reinforcenment Learning </a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<body>
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="desktop-nav" class="container">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Industry Research Projects</a>
-					</header>
+  <nav id="hamburger-nav" class="container" aria-label="Mobile Navigation">
+    <div class="logo">Maaz Qureshi</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" id="hamburgerBtn" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="menuLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu-links" id="menuLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Industry Research Project(s)</a></li>
-							<li><a href="generic.html">Professional Experience(s)</a></li> 
-							<li><a href="elements.html">Education</a></li> 
-						
-						</ul>
-						<ul class="icons">
-						<!-- 	<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> 
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/maaz-ahmad-046c/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li> 
-							<li><a href="https://github.com/Maaz-qureshi98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  <!-- ===================== PROFILE / HERO ===================== -->
+  <section id="profile" class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-photo">
+          <img src="./assets/profile-pic.jpg" alt="Maaz Qureshi portrait" loading="lazy" />
+        </div>
+      </div>
 
-				<!-- Main -->
-					<div id="main">
+      <div class="hero-right">
+        <p class="section__text__p1">Hi, this is</p>
+        <h1 class="title">Maaz Qureshi</h1>
+        <p class="section__text__p2">Software Research Engineer (5G, AI/ML, Robotics Perception & Autonomy)</p>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Jan, 2024 - April, 2025</span>
-									<h2><a href="https://www.youtube.com/watch?v=eTLxCY2rRMA">Beyond the Visible<br />
-										</a></h2>
-									<p>Advanced Volumetric Mapping (SLAM) with 5G-Connected Multi-Robots and 4D Radar Sensing<br /> </p>
-									MASc. Thesis Research @<a href="https://uwaterloo.ca/robohub/"> (a). ROBOHUB UWaterloo </a>; & <a href="https://uwaterloo.ca/wireless-sensors-and-devices-lab/"> (b). WSDL Labs </a><br /> 
-									Supervisor: Dr. <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/wmelek"> William Melek </a> ; & Dr. <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/gshaker"> George Shaker</a> <br />
-									Industry Partners: </a><a href="https://www.rogers.com/internet/packages"> Rogers Inc </p>
-								</header>
-								<a href="https://www.youtube.com/watch?v=eTLxCY2rRMA" class="image main"><img src="images/Project1.jpg" alt="" /></a>
-									<p>For smart factory(s) and warehouse(s) accurate and efficient indoor mapping and robotic inspections are vital for numerous applications, especially in large complex environments where traditional mapping methods often fail. We introduce an innovative method that addresses these challenges by combining advanced volumetric mapping with simultaneous localization and mapping (SLAM) techniques which utilize a visual camera, a 4D mmWave radar, and 5G technology. Our method improves the precision of visual sensors by allowing object(s) detection through occlusions and full obstructions, that is, walls and obstacles. The incorporation of 4D mmWave radar is crucial for detecting hidden structures, such as metal pipes behind walls, which are challenging for traditional sensors to detect. Using 5G technology, our solution ensures high bandwidth and efficient real-time data transmission, enabling the use of low-cost robots to perform sophisticated tasks by offloading computationally intensive work to a central server. Multiple experiments validate the robustness and effectiveness of the proposed method when deployed in real-world indoor mapping and inspection applications. -Github Repository: http://surl.li/xgfpxd <p> <p>
-                                                    			<ul class="actions special">
-									<li><a href="https://www.youtube.com/watch?v=eTLxCY2rRMA" class="button large">View Project Video</a></li> 
-								</ul>
-							</article>
+        <!-- ===================== HERO TREE (CLICKABLE) ===================== -->
+        <div class="logo-tree" aria-label="Career and education tree">
+          <svg class="tree-lines" viewBox="0 0 720 260" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="170" y1="43" x2="190" y2="43"></line>
+            <line x1="350" y1="43" x2="370" y2="43"></line>
+            <line x1="530" y1="43" x2="550" y2="43"></line>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date"> Fall 2024</span>
-										<h2><a href="https://www.youtube.com/watch?v=H6OYxlu0q00">CoBots<br />
-											Panda Franka Emika</a></h2>
-									</header>
-									<a href="https://www.youtube.com/watch?v=H6OYxlu0q00" class="image fit"><img src="images/Project2.jpg" alt="" /></a>
-									<p>Algorithm development with motion planning framework using OMPL RRT Connect algorithm, integrating quaternion-based kinematics for autonomous high-precision measurements of Antenna-Radar. (Industry partner: Keysight Technologies)</p>
-									<ul class="actions special">
-										<li><a href="https://www.youtube.com/watch?v=H6OYxlu0q00" class="button">View Project Video</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Winter, 2024</span>
-										<h2><a href="https://drive.google.com/file/d/1IvIz7Xvnk-jjGcVKldO5CLgQ5YhUBckr/view?usp=sharing">Humanoid Robots<br />
-										Human-Robot Interaction</a></h2>
-									</header>
-									<a href="https://drive.google.com/file/d/1IvIz7Xvnk-jjGcVKldO5CLgQ5YhUBckr/view?usp=sharing" class="image fit"><img src="images/Project3.png" alt="" /></a>
-									<p>Developed an (large language model) LLM and non-verbal communication framework for the NAO robot, enhancing collaborative task efficiency through gesture recognition for meal preparation in kitchen with humans (with ethics approval).</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1IvIz7Xvnk-jjGcVKldO5CLgQ5YhUBckr/view?usp=sharing" class="button">View Research Document</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">BASc Thesis Researh</span>
-										<h2><a href="https://drive.google.com/file/d/1ic5hAerr90bhnNFvn_BmVcYP45UzGQP0/view?usp=sharing">Swarm Robotics<br />
-										Multi-Robot Systems</a></h2>
-									</header>
-									<a href="https://drive.google.com/file/d/1ic5hAerr90bhnNFvn_BmVcYP45UzGQP0/view?usp=sharing" class="image fit"><img src="images/project4.png" alt="" /></a>
-									<p>Developed Swarm based custom Algorithm for multi agent UGVs to make pattern formation and navigation and extinguish the fire in the arena. 4 UGVs used for peer-to-peer synchronized topology via bluetooth for wireless data transfer.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1ic5hAerr90bhnNFvn_BmVcYP45UzGQP0/view?usp=sharing" class="button">View Project Video</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">January 2023 - December 2023</span>
-										<h2><a href="https://drive.google.com/drive/folders/18bYmCwY1LIwICQbEdHR-Cqnino6fR8KQ?usp=sharing">Underwater DAM Inspection<br />
-										Field Robotics Ops</a></h2>
-									</header>
-									<a href="https://drive.google.com/drive/folders/18bYmCwY1LIwICQbEdHR-Cqnino6fR8KQ?usp=sharing" class="image fit"><img src="images/project5.jpg" alt="" /></a>
-									<p>Digital twin based inspection of Neelum Jehlum (NJHEP) Dam HRT using ROV/AUV. Collaboration Hibbard Inshore (Michigan, USA) Saab Sabertooth double hull AUV via profiling and multi-beam sonar (advanced perception), and monochrome camera with attached tethered of 18 km. Project duration was 1 year, biggest underwater inspection project of South Asia</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/drive/folders/18bYmCwY1LIwICQbEdHR-Cqnino6fR8KQ?usp=sharing" class="button">View Documents</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Fall, 2022</span>
-										<h2><a href="https://drive.google.com/drive/folders/1DCBUf8P2L1ouxMgX6NgQNlcq-DcO5vRq?usp=sharing">DAM Canal Inspection<br />
-										Field Robotics Ops</a></h2>
-									</header>
-									<a href="https://drive.google.com/drive/folders/1DCBUf8P2L1ouxMgX6NgQNlcq-DcO5vRq?usp=sharing" class="image fit"><img src="images/project6.jpg" alt="" /></a>
-									<p>Integrated the Oculus blueprint 750d sonar on the ROV (remotely operated vehicle). Captured the crack propagation till the concrete bed. Design and fabricated metal body frame for mounting sonar.Data acquisition for side beds, water velocity of 2.3 m/s, depth 9m.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/drive/folders/1DCBUf8P2L1ouxMgX6NgQNlcq-DcO5vRq?usp=sharing" class="button">View Highlights</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Spring, 2022</span>
-										<h2><a href="https://drive.google.com/drive/folders/1-T06cVyxKgZP9MekK_Ysm3ULUgkmd1S9?usp=sharing">Robotics in Health-Care<br />
-										COVID-19</a></h2>
-									</header>
-									<a href="https://drive.google.com/drive/folders/1-T06cVyxKgZP9MekK_Ysm3ULUgkmd1S9?usp=sharing" class="image fit"><img src="images/project7.jpg" alt="" /></a>
-									<p>Developed and designed deep learning based facial recogintion and RFID-based autonomous pill dispenser nursing robot for path following. 6 different pills at the same time to the patient dispensing mechanism, also live stream to the doctor. The global application is targeted in hospitals to avoid contact with patients i.e. Covid-19.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/drive/folders/1-T06cVyxKgZP9MekK_Ysm3ULUgkmd1S9?usp=sharing" class="button">View Project Video</a></li>
-									</ul>
-								</article>
-							</section>
+           <line x1="265" y1="86" x2="265" y2="120"></line>
+<line x1="175" y1="120" x2="535" y2="120"></line>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<!--<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a> -->
-								</div>
-							</footer>
+<line x1="175" y1="120" x2="175" y2="140"></line>
+<line x1="355" y1="120" x2="355" y2="140"></line>
+<line x1="535" y1="120" x2="535" y2="140"></line>
 
-					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>200 University Ave West (Univeristy of Waterloo)<br />
-								Waterloo, Ontario, CA</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+1) 437-870-8791</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">m23qures@uwaterloo.ca</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/maaz-ahmad-046c/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li> 
-									<li><a href="https://github.com/Maaz-qureshi98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+          </svg>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Robot Autnomy Research Engineer - Maaz</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+          <a class="tree-node node-cobionix" href="https://www.cobionix.com/en/" target="_blank" rel="noopener">
+            <img src="./assets/cobionix.png" alt="Cobionix" loading="lazy" />
+            <span>2025–Present</span>
+          </a>
 
-			</div>
+          <a class="tree-node node-uw" href="https://uwaterloo.ca/" target="_blank" rel="noopener">
+            <img src="./assets/uwaterloo.jpeg" alt="University of Waterloo" loading="lazy" />
+            <span>MASc (2024–2025)</span>
+          </a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <a class="tree-node node-abyss" href="https://abysssolutions.co/" target="_blank" rel="noopener">
+            <img src="./assets/abyss.png" alt="Abyss Solutions" loading="lazy" />
+            <span>2022–2023</span>
+          </a>
 
-	</body>
+          <a class="tree-node node-bahria" href="https://bahria.edu.pk/" target="_blank" rel="noopener">
+            <img src="./assets/bahria_university.jpeg" alt="Bahria University" loading="lazy" />
+            <span>BSc (2017–2021)</span>
+          </a>
+
+          <a class="tree-node node-apple" href="https://www.apple.com/" target="_blank" rel="noopener">
+            <img src="./assets/apple.png" alt="Apple" loading="lazy" />
+            <span>2025</span>
+          </a>
+
+          <a class="tree-node node-keysight" href="https://www.keysight.com/us/en/home.html" target="_blank" rel="noopener">
+            <img src="./assets/keysight.png" alt="Keysight" loading="lazy" />
+            <span>2024</span>
+          </a>
+
+          <a class="tree-node node-rogers" href="https://www.rogers.com/" target="_blank" rel="noopener">
+            <img src="./assets/rogers.png" alt="Rogers" loading="lazy" />
+            <span>2024–2025</span>
+          </a>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Resume_Maaz.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" class="icon" alt="LinkedIn"
+               onclick="location.href='https://www.linkedin.com/in/maaz-ahmad-046c/'" />
+          <img src="./assets/github.png" class="icon" alt="GitHub"
+               onclick="location.href='https://github.com/Maaz-qureshi98'" />
+          <img src="./assets/google-scholar.png" class="icon" alt="Google Scholar"
+               onclick="location.href='https://scholar.google.ca/citations?user=hC7tswoAAAAJ&hl=en'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="container">
+  <p class="section__text__p1">Get To Know More</p>
+  <!-- <h1 class="title">About Me</h1> -->
+
+  <!-- Text LEFT, Image RIGHT -->
+  <div class="about-layout">
+    <div class="about-text">
+      <p class="justify">
+        I build intelligent software that combine perception, autonomy, and AI/ML software engineering.
+        My work spans multi-robot SLAM and volumetric mapping, manipulation: motion planning,
+        mmWave 4D radar + RGB-D perception, connected robotics over 5G mmWave wireless communication, and computational intelligence: reinforcenment learning (RL & IL).
+      </p>
+
+      <p class="justify">
+        During my M.A.Sc. at the University of Waterloo, I worked with
+        <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/wmelek" target="_blank" rel="noopener">Dr. William Melek</a>
+        and
+        <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/gshaker" target="_blank" rel="noopener">Dr. George Shaker</a>,
+        collaborating with Apple, UW RoboHub, Keysight, and Rogers on connected robotics systems.
+      </p>
+
+      <p class="justify">
+        Earlier in my life, I developed strong interest for swarm robotics and ending up developing novel software-hardware autonomy and won 3rd best engineering project in b.sc. Later, I supervised the NUST University team in iMech United Kingdom 2022 cometition for developing hexacopter for locust swarm autonomy mission.
+      </p>
+
+      <!-- ✅ ACADEMIC BACKGROUND MOVED HERE (below 3rd paragraph) -->
+      <h2 class="academic-heading">Academic Background</h2>
+
+      <div class="education-wrapper">
+        <!-- UW -->
+        <div class="edu-box">
+          <div class="edu-left">
+            <img src="./assets/uwaterloo.jpeg" class="edu-logo" alt="University of Waterloo Logo" />
+            <p class="edu-duration edu-duration-left">Jan 2024 – Aug 2025</p>
+          </div>
+          <div class="edu-right">
+            <h3 class="edu-title">University of Waterloo, Canada</h3>
+            <p class="edu-degree">Masters of Applied Sciences (M.A.Sc), Mechatronics Engineering</p>
+            <p class="edu-detail"><strong>Thesis:</strong> Intelligent Multi-Robot Autonomy with Connected AMRs and Manipulators for SMART Factory(s)</p>
+            <p class="edu-detail"><strong>CGPA:</strong> 93.5% (A+)</p>
+            <div class="edu-btn-row">
+              <a class="mini-btn" href="https://uwspace.uwaterloo.ca/items/17af2309-7924-47ad-802d-10f313d2a378" target="_blank" rel="noopener">Thesis</a>
+              <a class="mini-btn" href="https://www.youtube.com/watch?v=eTLxCY2rRMA" target="_blank" rel="noopener">Video 1</a>
+              <a class="mini-btn" href="https://www.youtube.com/watch?v=fgeb6k_P9mg" target="_blank" rel="noopener">Video 2</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="edu-divider" />
+
+        <!-- Bahria -->
+        <div class="edu-box">
+          <div class="edu-left">
+            <img src="./assets/bahria_university.jpeg" class="edu-logo" alt="Bahria University Logo" />
+            <p class="edu-duration">Sept 2017 – Aug 2021</p>
+
+          </div>
+          <div class="edu-right">
+            <h3 class="edu-title">Bahria University</h3>
+            <p class="edu-degree">Bachelors of Sciences (B.Sc), Electrical Engineering</p>
+            <p class="edu-detail"><strong>Thesis:</strong> Swarm Robotics: Centralized Multi-Robot Autonomy for Path Planning and Patterns</p>
+            <p class="edu-detail"><strong>CGPA:</strong> 3.49 / 4.00</p>
+            <div class="edu-btn-row">
+              <a class="mini-btn" href="BSC_THESIS_LINK_HERE" target="_blank" rel="noopener">Thesis</a>
+              <a class="mini-btn" href="https://www.youtube.com/watch?v=2UYPGOTPboM" target="_blank" rel="noopener">Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ✅ END ACADEMIC BACKGROUND -->
+    </div>
+
+    <div class="about-image">
+      <img src="./assets/about-pic.jpg" class="about-pic" alt="About Maaz" />
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+  <!-- ===================== RESEARCH (MOVED AFTER ABOUT) ===================== -->
+  <section id="research" class="container">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Research</h1>
+
+    <!-- Google Scholar shortcut -->
+    <div class="scholar-badge">
+      <a href="https://scholar.google.ca/citations?user=hC7tswoAAAAJ&hl=en" target="_blank" rel="noopener">
+        <img src="./assets/google-scholar.png" class="icon" alt="Google Scholar Profile" />
+      </a>
+      <p>Google Scholar Profile</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="field">Field Ops</button>
+    </div>
+
+    <div class="research-wrapper">
+      <!-- 1: CRADMap -->
+      <div class="research-box" data-tags="robotics ai">
+        <div class="research-media">
+          <img src="./assets/project1.png" class="project-thumb-lg" alt="CRADMap Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">CRADMap: Applied Distributed Volumetric Mapping with 5G-Connected Multi-Robots and 4D Radar Perception</h2>
+          <p class="project-desc justify">
+            Distributed volumetric mapping integrating ORB-SLAM3 (front-end), TSDF–Octree fusion,
+            4D mmWave radar + RGB-D perception, and 5G offloading for real-time mapping under occlusions
+            and degraded visibility.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://www.youtube.com/watch?v=eTLxCY2rRMA" target="_blank" rel="noopener">Video</a>
+            <a class="mini-btn" href="https://github.com/Maaz-qureshi98/CRADMap-Beyond-the-Visible" target="_blank" rel="noopener">GitHub</a>
+            <a class="mini-btn" href="https://arxiv.org/pdf/2503.00262" target="_blank" rel="noopener">Publication</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 2: RAPTAR -->
+      <div class="research-box" data-tags="robotics ai">
+        <div class="research-media">
+          <img src="./assets/project2.png" class="project-thumb-lg" alt="RAPTAR Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">RAPTAR: Radar Radiation Pattern Acquisition through Automated Collaborative Robotics</h2>
+          <p class="project-desc justify">
+            Automated collaborative-robot framework using OMPL RRT-Connect and quaternion kinematics
+            for high-precision mmWave antenna radiation pattern measurement in 3D space.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://www.youtube.com/watch?v=fgeb6k_P9mg" target="_blank" rel="noopener">Video</a>
+            <a class="mini-btn" href="https://github.com/Maaz-qureshi98/RAPTAR-Motion-Planning" target="_blank" rel="noopener">GitHub</a>
+            <a class="mini-btn" href="https://arxiv.org/pdf/2507.16988" target="_blank" rel="noopener">Publication</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 3: NAO HRI -->
+      <div class="research-box" data-tags="ai robotics">
+        <div class="research-media">
+          <img src="./assets/project3.1.png" class="project-thumb-lg" alt="Humanoid Robotics Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">Humanoid Robotics: Non-Verbal Gesture Learning</h2>
+          <p class="project-desc justify">
+            Integrated LLaMA 3 with gesture and vision sensing for real-time multimodal control of NAO robot,
+            enabling non-verbal HRI via IMU-based motion interpretation.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://drive.google.com/file/d/1IvIz7Xvnk-jjGcVKldO5CLgQ5YhUBckr/view" target="_blank" rel="noopener">Preprint</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 4: Swarm -->
+      <div class="research-box" data-tags="robotics">
+        <div class="research-media">
+          <img src="./assets/project4.png" class="project-thumb-lg" alt="Swarm Autobots Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">SWARM Autobots: Robust Synchronized Control for Multi-Robot Path Planning</h2>
+          <p class="project-desc justify">
+            Developed synchronized control and formation algorithms for multi-robot UGV teams enabling coordinated navigation,
+            wireless peer-to-peer communication, and real-time trajectory execution.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://www.youtube.com/watch?v=2UYPGOTPboM" target="_blank" rel="noopener">Video</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 5: Dam inspection -->
+      <div class="research-box" data-tags="field robotics">
+        <div class="research-media">
+          <img src="./assets/project5.jpg" class="project-thumb-lg" alt="DAM Inspection Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">Underwater Digital-Twin DAM Inspection Using ROV/AUV</h2>
+          <p class="project-desc justify">
+            Structure inspection of the NJHEP dam using multi-beam sonar, profiling sonar, and monochrome camera on ROVs/AUVs
+            over 18 km tethered operation — the largest inspection of its kind in South Asia.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://drive.google.com/drive/folders/18bYmCwY1LIwICQbEdHR-Cqnino6fR8KQ" target="_blank" rel="noopener">Documents</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 6: Canal -->
+      <div class="research-box" data-tags="field robotics">
+        <div class="research-media">
+          <img src="./assets/project6.jpg" class="project-thumb-lg" alt="Canal Inspection Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">Canal Crack-Propagation Inspection Using ROV + Sonar</h2>
+          <p class="project-desc justify">
+            Integrated Oculus 750d sonar on a custom ROV frame and performed underwater crack-propagation analysis at 9m depth
+            and 2.3 m/s water velocity.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://drive.google.com/drive/folders/1DCBUf8P2L1ouxMgX6NgQNlcq-DcO5vRq" target="_blank" rel="noopener">Documents</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 7: Healthcare robot -->
+      <div class="research-box" data-tags="ai robotics">
+        <div class="research-media">
+          <img src="./assets/project7.jpg" class="project-thumb-lg" alt="Healthcare Robot Project" />
+        </div>
+        <div class="research-text">
+          <h2 class="project-title">Autonomous Pill-Dispensing Healthcare Robot (COVID-19)</h2>
+          <p class="project-desc justify">
+            Designed an autonomous robot integrating facial recognition, RFID-based navigation, and multi-pill dispensing
+            for safe patient-care workflows during COVID-19.
+          </p>
+          <div class="project-btn-row">
+            <a class="mini-btn" href="https://drive.google.com/drive/folders/1-T06cVyxKgZP9MekK_Ysm3ULUgkmd1S9" target="_blank" rel="noopener">Video</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="container">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="exp-wrapper">
+      <!-- Cobionix -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://www.cobionix.com/en/" target="_blank" rel="noopener">
+            <img src="./assets/cobionix.png" class="exp-logo" alt="Cobionix Logo" />
+          </a>
+          <p class="exp-date">Sept 2025 – Present</p>
+          <p class="exp-location">Kitchener, Canada</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">AI & Robotics Software Engineer</p>
+          <p class="exp-company">Cobionix Corporation</p>
+          <ul class="exp-desc">
+            <li>Developing real-time vision pipelines on NVIDIA Jetson Orin using ONNX/TensorRT.</li>
+            <li>Optimizing inference latency and power via quantization, profiling, and deployment tuning.</li>
+            <li>Building device-side monitoring loops to adapt compute/inference rate under runtime load.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Apple -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://www.apple.com/" target="_blank" rel="noopener">
+            <img src="./assets/apple.png" class="exp-logo" alt="Apple Logo" />
+          </a>
+          <p class="exp-date">Jan 2024 – Jul 2025</p>
+          <p class="exp-location">Waterloo, Canada</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">Research Assistant — Software Engineering</p>
+          <p class="exp-company">Apple Inc. (Confidential / NDA)</p>
+          <ul class="exp-desc">
+            <li>Optimized embedded Linux data paths in C++/Python and reduced performance bottlenecks.</li>
+            <li>Profiled CPU/memory/I/O and implemented low-level fixes for stable throughput behavior.</li>
+            <li>Analyzed RF/telemetry Wifi (wireless communication) logs and tuned parameters.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- UW RoboHub -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://uwaterloo.ca/robohub/" target="_blank" rel="noopener">
+            <img src="./assets/robohub.png" class="exp-logo" alt="UW RoboHub Logo" />
+          </a>
+          <p class="exp-date">Jan 2024 – Sept 2025</p>
+          <p class="exp-location">Waterloo, Canada</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">Autonomy Software Graduate Researcher</p>
+          <p class="exp-company">University of Waterloo — RoboHub</p>
+          <ul class="exp-desc">
+            <li>Developed multi-robot SLAM and volumetric mapping pipelines in ROS2/C++.</li>
+            <li>Integrated 4D mmWave radar with RGB-D sensing for robust perception under occlusions.</li>
+            <li>Optimized TSDF/Octree mapping for real-time performance and deployment stability.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Keysight -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://www.keysight.com/us/en/home.html" target="_blank" rel="noopener">
+            <img src="./assets/keysight.png" class="exp-logo" alt="Keysight Logo" />
+          </a>
+          <p class="exp-date">Sept 2024 – Dec 2024</p>
+          <p class="exp-location">Waterloo, Canada</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">Research Internship — Motion Planning Software</p>
+          <p class="exp-company">Keysight Technologies</p>
+          <ul class="exp-desc">
+            <li>Built OMPL motion planning for 7-DoF Franka Panda and automated scanning trajectories.</li>
+            <li>Benchmarked planners and validated sim-to-real execution with repeatable configurations.</li>
+            <li>Packaged pipelines for reproducibility and CI-ready evaluation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Rogers -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://www.rogers.com/" target="_blank" rel="noopener">
+            <img src="./assets/rogers.png" class="exp-logo" alt="Rogers Logo" />
+          </a>
+          <p class="exp-date">Jan 2024 – Aug 2025</p>
+          <p class="exp-location">Waterloo, Canada</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">Software Engineer — MITACS Research Internship</p>
+          <p class="exp-company">Rogers Communications</p>
+          <ul class="exp-desc">
+            <li>Integrated 5G connectivity with autonomy pipelines on embedded Linux (Jetson).</li>
+            <li>Built Python-based models for network behavior and telemetry-driven tuning.</li>
+            <li>Containerized ROS2 services for reproducible, real-time offload experiments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Abyss -->
+      <div class="exp-box">
+        <div class="exp-left">
+          <a href="https://abysssolutions.co/" target="_blank" rel="noopener">
+            <img src="./assets/abyss.png" class="exp-logo" alt="Abyss Logo" />
+          </a>
+          <p class="exp-date">May 2022 – Dec 2023</p>
+          <p class="exp-location">Islamabad + Australia</p>
+        </div>
+        <div class="exp-right">
+          <p class="exp-role">Asset Integrity Engineer II — Software</p>
+          <p class="exp-company">Abyss Solutions Inc.</p>
+          <ul class="exp-desc">
+            <li>Developed sonar/camera inspection workflows and CV data processing pipelines.</li>
+            <li>Optimized large batch processing under runtime and memory constraints.</li>
+            <li>Supported field deployments and high-volume inspection reporting workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="container">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" class="icon contact-icon email-icon" alt="Email icon" />
+        <p><a href="mailto:maazqureshi919@gmail.com">maazqureshi919@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" class="icon contact-icon" alt="LinkedIn icon" />
+        <p><a href="https://www.linkedin.com/in/maaz-ahmad-046c/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p>© Maaz Qureshi — All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
